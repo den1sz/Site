@@ -174,7 +174,7 @@ button {
     top: 2px;
     right: -60px;
 
-    padding: 2px 11px 2px 8px;
+    padding: 0px 11px 0px 8px;
     font-size: 11px;
     text-transform: uppercase;
     background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
@@ -239,13 +239,21 @@ button {
 }
 
 .lecture-small-buttons {
+    position: relative;
     align-self: center;
     height: 30px;
     width: 30px;
-    padding: 3px 0px;
+    /* padding: 3px 0px; */
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 4px;
     text-align: center;
+}
+
+.small-buttons-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .lecture-list {
