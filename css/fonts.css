@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Jost'),
+    url(../fonts/Jost-Regular.woff),
+    url(../fonts/Jost-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Jost'),
+    url(../fonts/Jost-SemiBold.woff),
+    url(../fonts/Jost-SemiBold.woff2);
+}

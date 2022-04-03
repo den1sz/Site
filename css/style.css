@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
+    /* mix-blend-mode: normal;
+    opacity: 0.5; */
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1160px; /* Убрать */
+    margin-left: auto;
+    width: 100%;
+}
+
+button {
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    border: none;
+}
+
+.gray-text {
+    font-size: 11px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.gray-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+.white-text {
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.white-title {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* HEADER */
+.header-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 45px;
+    background: #2B2C3A;
+    border: 1px solid rgb(216, 216, 216, 0.1);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+
+    position: relative;
+}
+
+.header-nav::after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 24px;
+
+    background: #D8D8D8;
+    /* mix-blend-mode: normal; */
+    opacity: 0.1;
+}
+
+.header-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 14px;
+    padding-right: 55px;
+}
+
+.header-link {
+    padding: 17px 14px;
+
+    color: #FFFFFF;
+    /* mix-blend-mode: normal; */
+    opacity: 0.6;
+}
+
+.statistics-list {
+    display: flex;
+    gap: 10px;
+}
+
+.statistics-list-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 7px 9px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 5px;
+}
+
+.statistics-list-item:last-child {
+    position: relative;
+    padding-left: 31px;
+    text-align: center;
+}
+
+.list-item-icon {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 18px;
+    width: 18px;
+
+    background: #FF4738;
+    box-shadow: 0px 0px 12px rgba(255, 71, 56, 0.5);
+    border-radius: 4px;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-profile-user {
+    display: flex;
+    gap: 14px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.user-name {
+    padding: 1px 0 2px;
+    position: relative;
+}
+
+.user-name::after {
+    position: absolute;
+    content: 'pro';
+    top: 2px;
+    right: -60px;
+
+    padding: 2px 11px 2px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+    border-radius: 4px;
+}
+
+.user-status {
+    position: relative;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: #24CB8D;
+}
+
+.user-status::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    left: -14px;
+    top: 30%;
+    border-radius: 50%;
+    /* transform: translate(50%, 0); */
+
+    background-color: #24CB8D;
+}
+
+/* MAIN */
+
+.main {
+    background-color: #2B2C3A;
+    max-width: 1160px;
+    width: 100%;
+    margin-left: auto;
+
+}
+
+.lecture-block {
+    padding: 40px 55px 60px;
+}
+
+.lecture-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* ДОДЕЛАТЬ ПОЗИЦИЮ ДЛЯ КНОПКИ */
+}
+
+.lecture-buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.lecture-button {
+    padding: 7px 13px;
+    font-size: 12px;
+
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    border-radius: 4px;
+}
+
+.lecture-small-buttons {
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    padding: 3px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.lecture-list {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    gap: 10px;
+    padding: 25px 0 60px;
+}
+
+.lecture-list-item {
+    /* display: flex;
+    flex-flow: column; */
+
+    max-width: 255px;
+    width: 100%;
+    height: 294px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.lecture-list-item-image {
+    height: 144px;
+    width: 100%;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    background-image: url("../images/maik-jonietz-_yMciiStJyY-unsplash.png");
+}
+
+.lecture-list-item-image::after {
+    position: absolute;
+    content: 'Лекция';
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    padding: 4px 6px;
+    background: #6F6EFF;
+    border-radius: 3px;
+}
+
+/* .lecture-list-item:first-child .lecture-list-image{
+    background-image: url("../images/maik-jonietz-_yMciiStJyY-unsplash.png");
+} */
+
+.lecture-list-item-text {
+    padding: 15px 10px;
+    height: 88px;
+    line-height: 18px;
+}
+
+.lecture-list-item-title {
+    font-weight: 400;
+    font-size: 16px;
+
+    padding-bottom: 10px;
+}
+
+.lecture-list-item-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 15px;
+    border-top: 1px solid rgba(216, 216, 216, 0.1);
+}
