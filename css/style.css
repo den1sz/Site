@@ -75,6 +75,8 @@ input[type="checkbox"] {
 .white-title-big-suptitle {
     display: flex;
     justify-content: space-between;
+
+    width: 130px;
 }
 
 .uppercase {
@@ -407,8 +409,7 @@ input[type="checkbox"] {
     content: "";
     position: absolute;
     top: 50%;
-    right: -30px;
-    
+    right: -30px;  
 }
 
 .menu-item {
