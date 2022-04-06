@@ -15,3 +15,12 @@
     url(../fonts/Jost-SemiBold.woff),
     url(../fonts/Jost-SemiBold.woff2);
 }
+
+@font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Jost'),
+    url(../fonts/Jost-Bold.woff),
+    url(../fonts/Jost-Bold.woff2);
+}
