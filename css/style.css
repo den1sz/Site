@@ -416,7 +416,12 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: space-between;
     padding: 7px 30px;
-    
+
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);   
 }
 
 .menu-item:hover>img{
@@ -434,11 +439,12 @@ input[type="checkbox"] {
 .sidebar-nav-submenu li {
     position: relative;
     padding: 7px 0px 10px 92px;
+
+    cursor: pointer;
 }
 
 .sidebar-nav-submenu li:hover {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
-    mix-blend-mode: normal;
 }
 
 .sidebar-nav-submenu li:hover svg>path{
@@ -485,10 +491,11 @@ input[type="checkbox"] {
     top: 3px;
     left: 5px;
     border-radius: 10px;
-    background-color: #6F6EFF;
+    background-color: #ffffff;
     transition: 0.2s;
 }
 
 #input-switch:checked + .switch::after {
     left: 22px;
+    background-color: #6F6EFF;
 }
