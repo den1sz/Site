@@ -151,8 +151,6 @@ input[type="checkbox"] {
 }
 
 .statistics-list-item {
-    /* display: flex; */
-    /* align-items: center; */
     gap: 3px;
     padding: 7px 9px;
 
@@ -160,10 +158,6 @@ input[type="checkbox"] {
     border-radius: 5px;
     text-align: center;
 }
-
-/* .statistics-list-item:last-child {
-    text-align: center;
-} */
 
 .list-item-icon {
     display: inline-block;
@@ -386,17 +380,6 @@ input[type="checkbox"] {
 
 .sidebar-nav {
     padding: 23px 0px;
-}
-
-.submenu {
-    position: relative;
-}
-
-.submenu::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -30px;  
 }
 
 .menu-item {
