@@ -1,0 +1,122 @@
+/* HEADER */
+.header {
+    width: 82%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: 18%;
+    z-index: 2;
+}
+
+.header-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 14px 45px;
+    background: #2B2C3A;
+    border-bottom: 1px solid rgb(216, 216, 216, 0.1);
+}
+
+.header-nav {
+    position: relative;
+}
+
+.header-nav::after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 24px;
+    background: #D8D8D8;
+    opacity: 0.1;
+}
+
+.header-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding-right: 55px;
+}
+
+.header-link {
+    padding: 17px 14px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.statistics-list {
+    display: flex;
+    gap: 10px;
+}
+
+.statistics-list-item {
+    gap: 3px;
+    padding: 7px 9px;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.list-item-icon {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background: #FF4738;
+    box-shadow: 0px 0px 12px rgba(255, 71, 56, 0.5);
+    border-radius: 4px;
+}
+
+.header-profile-user {
+    display: flex;
+    gap: 14px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.user-name {
+    padding: 1px 0 2px;
+    position: relative;
+}
+
+.user-name::after {
+    position: absolute;
+    content: 'pro';
+    top: 2px;
+    right: -60px;
+    padding: 0px 11px 0px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+    border-radius: 4px;
+}
+
+.user-status {
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    color: #24CB8D;
+}
+
+.user-status::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    left: -14px;
+    top: 30%;
+    border-radius: 50%;
+    background-color: #24CB8D;
+}

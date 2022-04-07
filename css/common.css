@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #2C2D3B;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 18%;
+    margin-top: 73px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
+    z-index: 1;
+}
+
+button {
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    border: none;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.gray-text {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.gray-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.white-title {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.white-title-big {
+    font-weight: 700;
+    color: #FFFFFF;
+    size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.white-title-big-suptitle {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
