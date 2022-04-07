@@ -34,6 +34,10 @@
     transition: 0.3s;
 }
 
+.lecture-button:focus {
+    outline: 1px solid rgb(40, 30, 180);
+}
+
 .lecture-small-buttons {
     position: relative;
     align-self: center;
