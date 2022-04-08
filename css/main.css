@@ -52,7 +52,8 @@
     cursor: pointer;
 }
 
-.lecture-small-buttons:hover {
+.lecture-small-buttons:hover,
+.lecture-small-buttons:focus {
     border: 1px solid rgb(255, 255, 255);
     transition: 0.3s;
 }
