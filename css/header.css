@@ -44,10 +44,32 @@
 }
 
 .header-link {
+    position: relative;
     padding: 17px 14px;
-    color: #FFFFFF;
-    opacity: 0.6;
+    color: rgb(255, 255, 255, 0.6);
     cursor: pointer;
+}
+
+.header-link::after {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    border-bottom: 2px solid #FFFFFF;
+    transition: width 0.3s ease-out;
+}
+
+.header-link:hover {
+    width: calc(100% - 28px);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.header-link:hover::after,
+.header-link:focus::after {
+    width: calc(100% - 28px);
 }
 
 .statistics-list {

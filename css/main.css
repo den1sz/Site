@@ -7,6 +7,8 @@
 
 .lecture-block {
     padding: 40px 55px 60px;
+
+    overflow-x: scroll;
 }
 
 .lecture-block-header {
@@ -48,6 +50,11 @@
     text-align: center;
     background: transparent;
     cursor: pointer;
+}
+
+.lecture-small-buttons:hover {
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 .small-buttons-icon {

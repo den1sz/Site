@@ -78,6 +78,10 @@
     display: block;
 }
 
+.submenu .menu-item:focus .sidebar-nav-submenu {
+    display: block;
+}
+
 .form-group {
     display: flex;
     justify-content: space-between;
